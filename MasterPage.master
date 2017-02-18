@@ -1,0 +1,125 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, App_Web_wplwtrra" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Zephyr Awakening</title>
+    <meta runat="server" name="description" content="<%$ Resources:Resource, description %>" />
+    <meta id="Meta1" runat="server" name="keywords" content="<%$ Resources:Resource, keywords %>" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/customStyle.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <script src="js/wow.min.js"></script>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                       
+                        $('a[href="' + this.location.pathname.substring(1) + '"]').parent().addClass('active');
+                    });
+                    $(function () {
+                        $('#accordion > li').hover(
+                            function () {
+                                var $this = $(this);
+                                $this.stop().animate({ 'width': '500px' }, 500);
+                                $('.heading', $this).stop(true, true).fadeOut();
+                                $('.bgDescription', $this).stop(true, true).slideDown(500);
+                                $('.description', $this).stop(true, true).fadeIn();
+                            },
+                            function () {
+                                var $this = $(this);
+                                $this.stop().animate({ 'width': '115px' }, 1000);
+                                $('.heading', $this).stop(true, true).fadeIn();
+                                $('.description', $this).stop(true, true).fadeOut(500);
+                                $('.bgDescription', $this).stop(true, true).slideUp(700);
+                            }
+                        );
+                        
+                    });
+                </script>
+</head>
+<body>
+    <script>
+        new WOW().init();    
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+    <!--  <script type="text/javascript">
+        $(document).ready(function() { 
+        $('#nav li a').click(function (e) {
+            var $this = $(this);
+            $('#nav li a').removeClass('active');
+            if (!$this.hasClass('active')) {
+                $this.addClass('active');
+            }
+            e.preventDefault();
+        });
+        });
+        
+    </script>-->
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+        <div class="fadeInDown">
+
+                
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="Home.aspx">
+                            <img runat="server" alt="<%$ Resources:Resource,keywords%>" class="img-small" src="images/zephyr-awakening-transcendental-tarot-ouroborus.png" />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul id="nav" class="nav navbar-nav">
+                            <li><a class="btn1" href="index.aspx">
+                                <asp:Label runat="server" Text="<%$ Resources:Resource,menu_home %>" /></a></li>
+                            <li><a class="btn1" href="What_is_tarot.aspx">
+                                <asp:Label ID="Label1" runat="server" Text="<%$ Resources:Resource,menu_tarot %>" /></a></li>
+                            <li><a class="btn1" href="Transcendental_tarot.aspx">
+                                <asp:Label ID="Label2" runat="server" Text="<%$ Resources:Resource,menu_transcendental %>" /></a></li>
+                            <!--<li><a class="btn1" href="Who_is_it_for.aspx">
+                                <asp:Label ID="Label3" runat="server" Text="<%$ Resources:Resource,menu_who_is_it_for %>" /></a></li>-->
+                            <li><a class="btn1" href="Therapies.aspx">
+                                <asp:Label ID="Label4" runat="server" Text="<%$ Resources:Resource,menu_therapies %>" /></a></li>
+                            <li><a class="btn1" href="Zephyr.aspx">
+                                <asp:Label ID="Label5" runat="server" Text="<%$ Resources:Resource,menu_zephyr %>" /></a></li>
+                            <li><a class="btn1" href="Contacts.aspx">
+                                <asp:Label ID="Label6" runat="server" Text="<%$ Resources:Resource,menu_appointments %>" /></a></li>
+                        </ul>
+                        <p class="navbar-right h">Zephyr Awakening</p>
+                    </div>
+
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+
+
+        </div>
+    </form>
+</body>
+</html>
