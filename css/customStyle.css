@@ -1,0 +1,654 @@
+﻿body {
+    padding-top: 50px;
+    width: auto;
+    background-image: url("../images/zephyr-awakening-transcendental-tarot-background.png");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.img {
+    margin-top: 1px;
+    -webkit-box-shadow: 6px 1px 47px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 1px 47px -5px rgba(0,0,0,0.75);
+    box-shadow: 6px 1px 47px -5px rgba(0,0,0,0.75);
+}
+
+.tree-img {
+    height: 100%;
+    position: relative;
+    float: left;
+    margin: 100px 0px 50px 7px;
+    width: auto;
+    max-width: 80%;
+    padding: 0;
+    z-index: 1000;
+}
+
+.tree-side-content {
+    z-index: 1001;
+    position: absolute;
+    text-anchor: end;
+    float: right;
+    left: auto;
+    margin: 50px 0px 50px 40%;
+    width: 55%;
+    shape-rendering: optimizeQuality;
+    padding: 0;
+    text-align: justify;
+}
+
+.tbl-img {
+    max-width: 100%;
+    width: auto;
+}
+
+    .tbl-img img {
+        max-width: 75%;
+        width: auto;
+        margin-top: 50px;
+        -webkit-box-shadow: 6px 1px 47px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 1px 47px -5px rgba(0,0,0,0.75);
+        box-shadow: 6px 1px 47px -5px rgba(0,0,0,0.75);
+        z-index: 1000;
+    }
+
+        .tbl-img img:hover {
+            -webkit-animation: increasesize 0.3s ease-in-out;
+            animation: increasesize 0.3s ease-in-out;
+            margin-top: 50px;
+            width: 100%;
+            -webkit-box-shadow: 6px 1px 47px -5px rgba(0,0,0,0.75);
+            -moz-box-shadow: 6px 1px 47px -5px rgba(0,0,0,0.75);
+            box-shadow: 6px 1px 47px -5px rgba(0,0,0,0.75);
+        }
+
+        .tbl-img img:not(hover) {
+            -webkit-animation: decreasesize 0.1s ease-in-out;
+            animation: decreasesize 0.1s ease-in-out;
+            margin-top: 50px;
+            width: 75%;
+            -webkit-box-shadow: 6px 1px 47px -5px rgba(0,0,0,0.75);
+            -moz-box-shadow: 6px 1px 47px -5px rgba(0,0,0,0.75);
+            box-shadow: 6px 1px 47px -5px rgba(0,0,0,0.75);
+        }
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+.tbl-img td {
+    margin: 0px;
+}
+
+.well {
+    font-size: 16px;
+        font-size: 2vw;
+    font-family: 'Book Antiqua';
+    z-index: 10000;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    text-align: justify;
+    background: rgba(255,167,120,0.73);
+    border-top: 2px solid #500;
+    -webkit-animation: increasesize 0.2s ease-in-out;
+    animation: increasesize 0.2s ease-in-out;
+    background: rgba(255,167,120,0.43);
+    background: -moz-linear-gradient(-45deg, rgba(255,167,120,0.43) 0%, rgba(255,173,130,0.47) 11%, rgba(255,217,209,0.82) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,167,120,0.43)), color-stop(11%, rgba(255,173,130,0.47)), color-stop(100%, rgba(255,217,209,0.82)));
+    background: -webkit-linear-gradient(-45deg, rgba(255,167,120,0.43) 0%, rgba(255,173,130,0.47) 11%, rgba(255,217,209,0.82) 100%);
+    background: -o-linear-gradient(-45deg, rgba(255,167,120,0.43) 0%, rgba(255,173,130,0.47) 11%, rgba(255,217,209,0.82) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(255,167,120,0.43) 0%, rgba(255,173,130,0.47) 11%, rgba(255,217,209,0.82) 100%);
+    background: linear-gradient(135deg, rgba(255,167,120,0.43) 0%, rgba(255,173,130,0.47) 11%, rgba(255,217,209,0.82) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa778', endColorstr='#ffd9d1', GradientType=1 );
+    -webkit-box-shadow: 6px 1px 47px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 1px 47px -5px rgba(0,0,0,0.75);
+    box-shadow: 6px 1px 47px -5px rgba(0,0,0,0.75);
+}
+
+/*#diamond:hover {
+     -webkit-animation: rotate 1s;
+    animation: rotate 1s;
+}*/
+
+@keyframes rotate {
+    from {
+        rotation: 0deg;
+    }
+
+    to {
+        rotation: 90deg;
+    }
+}
+
+@-webkit-keyframes rotate {
+    from {
+        rotation: 0deg;
+    }
+
+    to {
+        rotation: 90deg;
+    }
+}
+
+
+@keyframes increasesize {
+    from {
+        width: 75%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes increasesize {
+    from {
+        width: 75%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes decreasesize {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 75%;
+    }
+}
+
+@-webkit-keyframes decreasesize {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 75%;
+    }
+}
+
+
+.contentwrapper {
+    -webkit-animation: moveright 1s ease-in;
+    animation: moveright 1s ease-ins;
+    width: 99%;
+    height: auto;
+    margin: 0px 5px 150px 5px;
+    border: 1px solid #ffa667;
+    background: rgba(161,71,23,0.73);
+    background: rgba(188,123,87,0.73);
+    background: -moz-linear-gradient(-45deg, rgba(188,123,87,0.73) 0%, rgba(194,132,99,0.82) 11%, rgba(239,203,195,0.82) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(188,123,87,0.73)), color-stop(11%, rgba(194,132,99,0.82)), color-stop(100%, rgba(239,203,195,0.82)));
+    background: -webkit-linear-gradient(-45deg, rgba(188,123,87,0.73) 0%, rgba(194,132,99,0.82) 11%, rgba(239,203,195,0.82) 100%);
+    background: -o-linear-gradient(-45deg, rgba(188,123,87,0.73) 0%, rgba(194,132,99,0.82) 11%, rgba(239,203,195,0.82) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(188,123,87,0.73) 0%, rgba(194,132,99,0.82) 11%, rgba(239,203,195,0.82) 100%);
+    background: linear-gradient(135deg, rgba(188,123,87,0.73) 0%, rgba(194,132,99,0.82) 11%, rgba(239,203,195,0.82) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc7b57', endColorstr='#efcbc3', GradientType=1 );
+    position: absolute;
+    -webkit-box-shadow: 22px 28px 44px 8px rgba(51,29,17,0.8);
+    -moz-box-shadow: 22px 28px 44px 8px rgba(51,29,17,0.8);
+    box-shadow: 22px 28px 44px 8px rgba(51,29,17,0.8);
+}
+
+.insidewrapper {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.contentleft,
+.contentright {
+    height: 100%;
+    position: relative;
+    float: left;
+    margin: 50px 0px 50px 7px;
+    width: auto;
+    max-width: 40%;
+    padding: 0;
+}
+
+.contentright {
+    position: relative;
+    float: right;
+    margin: 50px 0px 50px 0px;
+    width: auto;
+    max-width: 55%;
+    shape-rendering: optimizeQuality;
+    padding: 0;
+}
+
+.contentright_less {
+    height: 100%;
+    margin: 100px 0px 50px 0px;
+    width: auto;
+    text-anchor: middle;
+    text-align: center;
+    max-width: 80%;
+    shape-rendering: optimizeQuality;
+    padding: 0;
+}
+
+.text-header {
+    font-size: xx-large;
+    font-size: 7vw;
+    text-shadow: 12px 12px 2px rgba(100, 0, 0, 0.3);
+    color: #810303;
+    font-family: 'Bookman Old Style';
+    -webkit-animation: mymove 2s ease-in;
+    animation: mymove 2 ease-ins;
+}
+
+.text-normal,
+.text-normal-1,
+.text-normal-2,
+.text-normal-3,
+.text-normal-4,
+.text-normal-5,
+.text-normal-6,
+.text-normal-7 {
+    text-shadow: 12px 12px 2px rgba(100, 0, 0, 0);
+        font-size: x-large;
+    font-size: 2vw;
+    text-align: justify;
+    font-family: 'Bookman Old Style';
+    font-weight: 100;
+    -webkit-animation: mymove 2s ease-in;
+    animation: mymove 2 ease-ins;
+}
+
+.text-normal-2 {
+    -webkit-animation: mymove 3s ease-in;
+    animation: mymove 3s ease-in;
+}
+
+
+.text-normal-3 {
+    -webkit-animation: mymove 4s ease-in;
+    animation: mymove 4s ease-in;
+}
+
+.text-normal-4 {
+    -webkit-animation: mymove 5s ease-in;
+    animation: mymove 5s ease-in;
+}
+
+.text-normal-5 {
+    -webkit-animation: mymove 6s ease-in;
+    animation: mymove 6s ease-in;
+}
+
+.text-normal-6 {
+    -webkit-animation: mymove 7s ease-in;
+    animation: mymove 7s ease-in;
+}
+
+.text-normal-7 {
+    -webkit-animation: mymove 8s ease-in;
+    animation: mymove 8s ease-in;
+}
+
+.text-normal-8 {
+    -webkit-animation: mymove 9s ease-in;
+    animation: mymove 9s ease-in;
+}
+
+.animated {
+    -webkit-animation: mymove 2s;
+    animation: mymove 2s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes mymove {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes moveright {
+    from {
+        opacity: 0.2;
+        top: -800px;
+    }
+
+    to {
+        opacity: 1;
+        top: 50px;
+    }
+}
+
+@keyframes moveright {
+    from {
+        opacity: 0.2;
+        top: -800px;
+    }
+
+    to {
+        opacity: 1;
+        top: 50px;
+    }
+}
+
+@-webkit-keyframes moveleft {
+    from {
+        opacity: 0.2;
+        right: 100px;
+    }
+
+    to {
+        opacity: 1;
+        right: 0px;
+    }
+}
+
+@keyframes moveleft {
+    from {
+        opacity: 0.2;
+        width: 0px;
+        right: 100px;
+    }
+
+    to {
+        opacity: 1;
+        width: 93%;
+        right: 0px;
+    }
+}
+
+.nav > li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+.img-small {
+    height: inherit;
+    width: inherit;
+    margin: 0px;
+}
+
+.item > img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav li {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.h3 {
+    -webkit-animation: mymove 5s;
+    text-emphasis-color: azure;
+    animation-delay: 2s;
+    animation: mymove 5s;
+}
+
+.navbar-brand {
+    vertical-align: central;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.h {
+    color: chocolate;
+    font-size: 20px;
+    font-size: 2vw;
+    margin: 0px 70px 0px 0px;
+}
+
+
+.modal-content {
+    margin: 2% 20% 0 20%;
+    width: 60%;
+    text-align: justify;
+    font-size: 16px;
+    border: none;
+    font-family: 'Book Antiqua';
+    background: rgba(255,167,120,0.8);
+    -webkit-box-shadow: 6px 1px 47px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 1px 47px -5px rgba(0,0,0,0.75);
+    box-shadow: 6px 1px 47px -5px rgba(0,0,0,0.75);
+}
+
+.modal {
+    vertical-align: central;
+    border-color: #500;
+}
+
+.text-primary {
+    font-size:3vw;
+    font-family: 'Baskerville Old Face';
+    color: rgba(100, 0, 0, 1);
+    text-shadow: 12px 12px 12px 12px rgba(2,2,2,0.75);
+}
+
+.line {
+    -webkit-animation: moveleft 5s;
+    animation: moveleft 5s;
+    width: 93%;
+    text-align: right;
+    color: #500;
+    margin: 30px 0px 0px 10px;
+    border-bottom: 2px solid #500;
+    -webkit-box-shadow: 22px 28px 44px 8px rgba(51,29,17,0.4);
+    -moz-box-shadow: 22px 28px 44px 8px rgba(51,29,17,0.4);
+    box-shadow: 22px 28px 44px 8px rgba(51,29,17,0.4);
+}
+
+h1 {
+    text-align: right;
+    padding-left: 30px;
+    border-color: #00ff7a;
+    color-interpolation: linearRGB;
+    font-family: 'Book Antiqua';
+    font-size: 78px;
+        font-size: 7vw;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding-right: 30px;
+}
+
+.frame {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    height: 600%;
+    border: none;
+}
+
+ul.accordion {
+    list-style: none;
+    position: absolute;
+    right: 80px;
+    top: 0px;
+    font-family: Cambria, serif;
+    font-size: 16px;    font-size: 2vw;
+    font-style: italic;
+    line-height: 1.5em;
+}
+
+    ul.accordion li {
+        float: right;
+        width: 115px;
+        height: 600px;
+        display: block;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        -moz-box-shadow: 1px 3px 15px #555;
+        -webkit-box-shadow: 1px 3px 15px #555;
+        box-shadow: 1px 3px 15px #555;
+    }
+
+        ul.accordion li.bg1 {
+            background-image: url(../images/zephyr-awakening-transcendental-tarot-01.png);
+        }
+
+        ul.accordion li.bg2 {
+            background-image: url(../images/zephyr-awakening-transcendental-tarot-02.png);
+        }
+
+        ul.accordion li.bg3 {
+            background-image: url(../images/zephyr-awakening-transcendental-tarot-03.png);
+        }
+
+        ul.accordion li.bg4 {
+            background-image: url(../images/zephyr-awakening-transcendental-tarot-04.png);
+        }
+
+        ul.accordion li.bg5 {
+            background-image: url(../images/zephyr-awakening-transcendental-tarot-05.png);
+        }
+
+        ul.accordion li.bg6 {
+            background-image: url(../images/zephyr-awakening-transcendental-tarot-06.png);
+        }
+
+        ul.accordion li.bleft {
+            border-left: 2px solid #fff;
+        }
+
+        ul.accordion li .heading {
+            background-color: #fff;
+            padding: 10px;
+            margin-top: 60px;
+            opacity: 0.9;
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 14px;
+                font-size: 1.5vw;
+            color: #444;
+            text-align: center;
+            text-shadow: -1px -1px 1px #ccc;
+        }
+
+        ul.accordion li .description {
+            position: absolute;
+            width: 480px;
+            height: 175px;
+            bottom: 0px;
+            left: 0px;
+            display: none;
+        }
+
+            ul.accordion li .description h2 {
+                text-transform: uppercase;
+                font-style: normal;
+                font-weight: bold;
+                letter-spacing: 1px;
+                font-size: 45px;
+                color: #444;
+                text-align: left;
+                margin: 0px 0px 15px 20px;
+                text-shadow: -1px -1px 1px #ccc;
+            }
+
+            ul.accordion li .description p {
+                line-height: 14px;
+                margin: 10px 22px;
+                font-family: "Trebuchet MS", sans-serif;
+                font-size: 12px;
+                font-style: italic;
+                font-weight: normal;
+                text-transform: none;
+                letter-spacing: normal;
+                line-height: 1.6em;
+            }
+
+            ul.accordion li .description a {
+                position: absolute;
+                bottom: 5px;
+                left: 20px;
+                text-transform: uppercase;
+                font-style: normal;
+                font-size: 11px;
+                text-decoration: none;
+                color: #888;
+            }
+
+                ul.accordion li .description a:hover {
+                    color: #333;
+                    text-decoration: underline;
+                }
+
+        ul.accordion li .bgDescription {
+            background: transparent url(../images/bgDescription.png) repeat-x top left;
+            height: 340px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            display: none;
+        }
+
+.kwicks {
+    width: 515px;
+    height: 100px;
+}
+
+    .kwicks > li {
+        height: 100px;
+        /* overridden by kwicks but good for when JavaScript is disabled */
+        width: 125px;
+        margin-left: 5px;
+        float: left;
+    }
+
+#panel-1 {
+    background-image: url(../images/zephyr-awakening-transcendental-tarot-01.png);
+}
+
+#panel-2 {
+    background-image: url(../images/zephyr-awakening-transcendental-tarot-02.png);
+}
+
+#panel-3 {
+    background-image: url(../images/zephyr-awakening-transcendental-tarot-03.png);
+}
+
+#panel-4 {
+    background-image: url(../images/zephyr-awakening-transcendental-tarot-04.png);
+}
+
+#panel-5 {
+    background-image: url(../images/zephyr-awakening-transcendental-tarot-05.png);
+}
+
+#panel-6 {
+    background-image: url(../images/zephyr-awakening-transcendental-tarot-06.png);
