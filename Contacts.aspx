@@ -20,7 +20,7 @@
             </div>
             <div class="text-normal-3">
                 Telefone: 
-                        +351 93 881 90 35<br />
+                        +351 93 520 81 53<br />
             </div>
                         <div class="text-normal-4">
                 Skype: 
